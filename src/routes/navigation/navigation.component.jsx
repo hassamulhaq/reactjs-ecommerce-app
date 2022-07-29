@@ -1,5 +1,7 @@
 import React from "react"
 import {Outlet, Link} from "react-router-dom"
+import WebLogo from "../../assets/images/return-box-logo.png"
+
 import "./navigation.styles.css"
 
 function NavigationComponent() {
@@ -7,7 +9,10 @@ function NavigationComponent() {
         <>
             <nav className="navbar">
                 <div className="navbar-brand">
-                    <Link className="nav-link" to="/">Home</Link>
+                    <Link className="nav-link" to="/">
+                        <img src={WebLogo} alt="logo"/>
+                        <span>React eCom</span>
+                    </Link>
                 </div>
                 <div className="menu">
                     <ul>
@@ -18,10 +23,12 @@ function NavigationComponent() {
                     </ul>
                 </div>
                 <div className="toggle-theme">
-                    <input type="checkbox" className="toggler"/>
+                    <input type="checkbox" id="switch" className="switch"/>
+                    <label htmlFor="switch">Toggle</label>
                 </div>
             </nav>
-            <Outlet/>
+
+            <Outlet />
         </>
     )
 }
