@@ -1,5 +1,5 @@
 import React from "react"
-import {Outlet} from "react-router-dom"
+import {Outlet, Link} from "react-router-dom"
 import "./navigation.styles.css"
 
 function NavigationComponent() {
@@ -7,13 +7,13 @@ function NavigationComponent() {
         <>
             <nav className="navbar">
                 <div className="navbar-brand">
-                    <a href="/" className="nav-link">Home</a>
+                    <Link className="nav-link" to="/">Home</Link>
                 </div>
                 <div className="menu">
                     <ul>
                         <li>
-                            <a href="/" className="nav-link">Home</a>
-                            <a href="/shop" className="nav-link">Shop</a>
+                            <Link to="/" className="nav-link">Home</Link>
+                            <Link to="/shop" className="nav-link">Shop</Link>
                         </li>
                     </ul>
                 </div>

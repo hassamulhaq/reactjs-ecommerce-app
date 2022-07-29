@@ -1,7 +1,7 @@
-import React from "react"
+import React, {Fragment} from "react"
 import Directory from "../../components/directory/directory.component"
 
-function HomeComponent () {
+function HomeComponent() {
 
     const categories = [
         {
@@ -22,9 +22,9 @@ function HomeComponent () {
     ]
 
     return (
-        <>
-            <Directory categories={categories} />
-        </>
+        <Fragment>
+            <Directory categories={categories}/>
+        </Fragment>
     )
 }
 
