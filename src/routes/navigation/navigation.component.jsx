@@ -2,7 +2,7 @@ import React from "react"
 import {Outlet} from "react-router-dom"
 import "./navigation.styles.css"
 
-function NavigationComponent () {
+function NavigationComponent() {
     return (
         <>
             <nav className="navbar">
@@ -17,8 +17,11 @@ function NavigationComponent () {
                         </li>
                     </ul>
                 </div>
+                <div className="toggle-theme">
+                    <input type="checkbox" className="toggler"/>
+                </div>
             </nav>
-            <Outlet />
+            <Outlet/>
         </>
     )
 }

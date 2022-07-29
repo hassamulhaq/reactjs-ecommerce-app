@@ -12,6 +12,7 @@
 .navbar .menu {
     display: flex;
     justify-content: end;
+    flex-grow: 1;
     align-content: center;
 }
 .navbar .navbar-brand a {
